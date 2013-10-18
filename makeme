@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+export EnableNuGetPackageRestore=true
+cmd.exe /c makeme.bat
