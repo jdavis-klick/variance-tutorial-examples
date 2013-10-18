@@ -6,37 +6,15 @@ using Variance.Models;
 
 
 namespace Variance.Examples {
+
 	public class SimpleCovarianceExamples {
 
-		class Base { }
-		class Derived : Base { }
-		class OtherDerived : Base { }
-
-		void populate(Base[] bases) {
-			bases[0] = new OtherDerived();
-		}
 
 		public void Run() {
 
 			// simple assignment is covariant
 			Base _base = new Derived();
-
-			Base[] baseArray = new Base[1];
-			Derived[] derivedArray = new Derived[] { new Derived() };
-
-			// array element assignment is covariant
-			baseArray[0] = new Derived();
-			baseArray[0] = new OtherDerived();
-
-			// Good Lord.  Why does C# allow this?! It's not type-safe
-			baseArray = derivedArray;
-			baseArray[0] = new Derived();
-			// ArrayTypeMismatchException
-			baseArray[0] = new OtherDerived();
-
-			// or this?!
-			populate(derivedArray);
-
+		
 			// List
 
 			IList<Base> baseList = new List<Base>();
@@ -48,6 +26,7 @@ namespace Variance.Examples {
 
 			derivedList.Add(new Derived());
 			// can't add supertype to List
+			//derivedList.Add(new Base());
 
 			// can't assign List<Derived> to List<Base>!
 			//baseList = derivedList;
