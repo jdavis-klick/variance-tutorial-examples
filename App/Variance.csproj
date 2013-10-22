@@ -64,20 +64,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Arrays.cs" />
-    <Compile Include="Models\ActionExamples.cs" />
-    <Compile Include="Models\Simple.cs" />
-    <Compile Include="Models\InExamples.cs" />
-    <Compile Include="Models\OutExamples.cs" />
-    <Compile Include="Models\FunctionExamples.cs" />
-    <Compile Include="Models\EnumerableExamples.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Models\SimpleCovarianceExample.cs" />
-    <Compile Include="Models\Zoo.cs" />
-    <Compile Include="Models\GenericInterfaceExamples.cs" />
-    <Compile Include="Models\InterfaceExamples.cs" />
-    <Compile Include="Models\Taxonomy.cs" />
+    <Compile Include="Models\11_ArrayExample.cs" />
+    <Compile Include="Models\12_ListExample.cs" />
+    <Compile Include="Models\16_DelegateExample.cs" />
+    <Compile Include="Models\17_DelegateAssigment.cs" />
+    <Compile Include="Models\00_Simple.cs" />
+    <Compile Include="Models\14_GenericInterface.cs" />
+    <Compile Include="Models\13_OutExamples.cs" />
+    <Compile Include="Models\15_FunctionExamples.cs" />
+    <Compile Include="Models\10_SimpleCovarianceExample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

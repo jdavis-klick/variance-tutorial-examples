@@ -1,18 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Variance.Models;
 
 namespace Variance.Examples {
 
-	class ArrayExamples {
+	public class ArrayExamples {
 
 		void populate(Base[] bases) {
 			bases[0] = new OtherDerived();
 		}
 
-		void Run() {
+		public void Run() {
 			// Array Covariance
 			// http://msdn.microsoft.com/en-us/library/aa664572(v=vs.71).aspx
 			/*
